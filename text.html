@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration:none;
+        }
+        ul{
+            list-style:none;
+        }
+        ul::after{
+            content:'';
+            display:block;
+            clear:left;
+        }
+        #div1{
+            backgroud:purple;
+        }  /*两个块状元素嵌套 如果不规定宽高 第二个就会把第一个覆盖*/
+        #div2{
+            background:yellow;
+        }
+        #div3{
+            height:0px;
+            width:0px;
+            background:#ff0036;
+            border-width:20px;
+            border-style:solid;
+            border-color:yellow red pink blue;
+            position:absolute;
+            right:20px;
+            top:20px;
+        }
+        #div4{
+            width:100px;
+            height:100px;
+            background:green;
+            position:relative;
+        }
+        .div5{
+            background:purple;
+            width:100px;
+            height:30px;
+            line-height:30px;
+            float:left;
+            border:1px solid pink;
+            margin-right:2px;
+        }
+        .div6{
+            background:yellow;
+            display:block;
+            padding-left:20px;
+        }
+        .div6:hover{
+            background:hotpink;
+            color:green;
+        }
+        #div7{
+            height:100px;
+            width:100px;
+            background:red;
+            transition:width 3s ease 1s;
+        }
+        #div7:hover{
+            /*transform:rotate(180deg);*/
+            /*transform:skew(30deg);*/
+            transform:translateY(10px);
+            width:70px;
+        }
+        .clear{
+            clear:left;
+        }
+       /* p{
+            background:blue;
+            color:gold;
+        }*/
+        .menu{
+            background:#e5e5e5;
+            height:32px;
+            font-size:12px;
+        }
+        .wraspper{
+            width:1230px;
+            height:32px;
+            line-height:32px;
+            margin:0 auto;
+            background:#999999;
+        }
+        .text1 a,.text1 span{
+            color:#f2f2f2;
+            padding-right:10px;
+            display:block;
+            float:left;
+        }
+        .text1 a:hover{
+            color:#ff0036;
+        }
+        .wraspper ul{
+            float:right;
+        }
+        #div8{
+            height:100px;
+            background:purple;
+            opacity:0.3; /*值取 0-1*/
+            filter:alpha(opacity=30) ;/*值取0-100*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">wenzi</div>
+    </div>
+    <div id="div4">
+        <div id="div3"></div>
+    </div>
+    <ul>
+        <li class="div5"><a href="#" class="div6">Link 1</a></li>
+        <li class="div5"><a href="#" class="div6">Link 2</a></li>
+        <li class="div5"><a href="#" class="div6">Link 3</a></li>
+        <li class="div5"><a href="#" class="div6">Link 4</a></li>
+        <!--<div class="clear"></div>-->
+    </ul>
+    <!--<p>fdfd djfdk fgjkl sf d lkds kjdkfd dfjd f ddjfljlsd kdjf</p>-->
+    <!--<ul>
+        <li>fff</li>
+        <li>fff</li>
+        <li>fff</li>
+        <li>fff</li>
+        <li>fff</li>
+    </ul>-->
+    <div id="div7">dd</div>
+    <div class="menu">
+        <div class="wraspper">
+            <div class="text1">
+                <span>我的事</span>
+                <a href="#">登录</a>
+            </div>
+            <ul>
+                <li>牛奶</li>
+                <li>饼干</li>
+                <li>羊奶</li>
+                <li>花生</li>
+            </ul>
+        </div>
+    </div>
+    <div id="div8">hhjj</div>
+</body>
+</html>

@@ -1,0 +1,646 @@
+/*.header{
+    position:relative;
+}*/
+.header{
+    overflow: hidden;/*解决塌陷问题*/
+    height: 130px;/*解决了天猫logo与下面文字中间有缝的问题*/
+}
+.search-box{
+    /*position:absolute;
+    top: 38px;
+    left:400px;*/
+    width: 629px;
+    margin-top:38px;
+    margin-left:120px;
+}
+.logo .logo-mall {
+    width: 240px;
+    height: 130px;
+}
+.logo,.search-box{
+    float:left;
+}
+.search{
+    width:625px;
+    height:36px;
+    border:2px solid #ff0036;
+}
+.search-in{
+    width:491px;
+    height:36px;
+    outline:none;
+    border:none;
+    float:left;
+} /*怎样在输入框里加文字 margin 有边框定为负值想要达到什么效果 tianmao logo不用浮动用定位行不行*/
+.search-up{
+    width: 134px;
+    height: 36px;
+    border:none;
+    background-color:#ff0036;
+    font-size: 18px;
+    float:left;
+    color:#ffffff;
+    /* outline:none;*/
+}
+.under-search{
+    font-size:14px;
+    margin-top:4px;
+    margin-left:-12px;
+}
+.under-search li{
+    float:left;
+    padding:0px 12px;
+    position:relative;
+    /*为什么 我写的span浮动之后 没有掉到底下去呢 父类元素的宽还够呢*/
+}
+.under-search li a{
+   /* position:relative;*/
+    color:#999;
+}
+.under-search li span{
+    background-color:#999;
+    float:right;
+    width:1px;
+    height:14px;
+    position:absolute;
+    right:0px;
+    top:4px;
+}
+.under-search .hot-dog  a{
+    color:#ff0036;
+}
+/*head结束*/
+/*menu-box开始*/
+.menu-box{
+    height:35px;
+    border-bottom:2px solid #ff0036;
+    overflow: hidden;
+}
+.menu-box-link{
+    margin-left:200px;
+}
+.menu-box-link li{
+    height: 36px;
+    line-height:36px;
+    float: left;
+}
+.menu-box-link li a{
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    display:block;
+}
+.box-link-item a img{
+    width:100px;
+   margin-top:3px;
+}
+/*menu-box结束*/
+/*轮播图*/
+.slider-box{
+    position:relative;
+    z-index: -1;
+}
+.slider-item1{
+    background:#a8e5fa;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+}
+  /* z-index: 2;*/
+/*z-index 用法 很多元素被定位 中优先级别的问题*/
+.slider-item2{
+    background:#b92025;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+}
+.slider-item3 {
+    background:#13256a;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    }
+ /*z-index:1;*/
+.slider-item4{
+    background:#b92025;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+}
+.slider-link{
+    display:block;
+    width:1230px;
+    margin:0 auto;
+}
+.slider-link img{
+    height:500px;
+    width:1230px;
+    display:block;
+}
+
+/*轮播图结束*/
+/*给ul 一个 高之后 ul 距离图片还有一段距离 就把图片的 diaplay 设置成block*/
+/*图片放到元素里就是 有个小空 用block 解决这个问题*/
+/*商品分类开始*/
+.category-content{
+    margin-top:-36px;
+    /*margin-left:13px;*/
+    width:200px;
+}
+.category-content h3{
+    color: #fff;
+    background:#ff0036;
+    height:36px;
+    line-height:36px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.category-content i {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #999999;
+}
+.category-content .category-content-list{
+    height:500px;/*给ul 一个 高之后 ul 距离图片还有一段距离 就把图片的 diaplay 设置成block*/
+}
+.category-content h3 i{
+    margin-right:8px;
+    color: #ffffff;
+}
+.category-content li i{
+    margin-right:10px;
+}
+.category-content-list{
+    background: rgba(0,0,0,0.5);
+    /*background:#000;
+    opacity:0.5;用opacity 设置透明度  连背景中的文字也是透明的*/
+}
+.category-content-list>li{
+    font-size: 14px;
+    height: 31.2px;
+    line-height: 31.2px;
+}
+.category-content-list>li a{
+    color:#ffffff;
+    display:block;
+    -webkit-font-smoothing: antialiased;/*css3去掉锯齿*/
+}
+.category-link1:hover{
+    background:#fff;
+}
+.category-link2:hover{
+    background:#fff;
+}
+.category-link3:hover{
+    background:#fff;
+}
+.category-link4:hover{
+    background:#fff;
+}
+.category-link5:hover{
+    background:#fff;
+}
+.category-link6:hover{
+    background:#fff;
+}
+.category-link7:hover{
+    background:#fff;
+}
+.category-link8:hover{
+    background:#fff;
+}
+.category-link9:hover{
+    background:#fff;
+}
+.category-link10:hover{
+    background:#fff;
+}
+.category-link11:hover{
+    background:#fff;
+}
+.category-link12:hover{
+    background:#fff;
+}
+.category-link13:hover{
+    background:#fff;
+}
+.category-link14:hover{
+    background:#fff;
+}
+.category-link15:hover{
+    background:#fff;
+}
+.category-link16:hover{
+    background:#fff;
+}
+.category-link1:hover>a,.category-link1:hover>a>i{
+    color:#d10e44;
+}
+.category-link2:hover{
+    background:#fff;
+}
+.category-link2:hover>a,.category-link2:hover>a>i{
+    color:dodgerblue;
+}
+.category-link3:hover{
+    background:#fff;
+}
+.category-link3:hover>a,.category-link3:hover>a>i{
+    color:plum;
+}
+.category-link4:hover>a,.category-link4:hover>a>i{
+    color:#7a45e5;
+}
+.category-link5:hover>a,.category-link5:hover>a>i{
+    color:#427def;
+}
+.category-link6:hover>a,.category-link6:hover>a>i{
+     color:#b1474a;
+ }
+.category-link7:hover>a,.category-link7:hover>a>i{
+    color:#f7a831;
+}
+.category-link8:hover>a,.category-link8:hover>a>i{
+    color:#b1474a;
+}
+.category-link9:hover>a,.category-link9:hover>a>i{
+    color:#b1474a;
+}
+.category-link10:hover>a,.category-link10:hover>a>i{
+    color:#b1474a;
+}
+.category-link11:hover>a,.category-link11:hover>a>i{
+    color:#b1474a;
+}
+.category-link12:hover>a,.category-link12:hover>a>i{
+    color:#b1474a;
+}
+.category-link13:hover>a,.category-link13:hover>a>i{
+    color:#b1474a;
+}
+.category-link14:hover>a,.category-link14:hover>a>i{
+    color:#b1474a;
+}
+.category-link15:hover>a,.category-link15:hover>a>i{
+    color:#b1474a;
+}
+.category-link16:hover>a,.category-link16:hover>a>i{
+    color:#b1474a;
+}
+
+
+/*.category-content i{
+    display:block;
+    position:absolute;
+    top:10px;
+    left:35px;
+    color:#fff;
+    font-size:16px;
+}
+.category-content2 a{
+    font-size:14px;
+    color:#fff;
+    height:31.2px;
+    display:block;
+    line-height:31.2px;
+    padding-left:56px;
+}
+.category-content2 a i{
+    margin-left:-20px;
+    display:inline-block;
+}
+ /*为什么我的列表里面的字体看着更瘦小呢*/
+/*商品分类结束*/
+.tmall-content{
+    background:#efefef;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.brand1{
+    padding-top:32px;
+    /*margin-top:32px;*/ /*遇到经典的外边距合并 问题 wrapper margin-top 设置为0 而 brand-wrapper
+    中margin-top 32px 外边距合并 采用 内边据*/
+    overflow: hidden;
+}
+.brand1 .text{
+    float:left;
+    width:234px;
+    margin-right:13px;
+}
+.brand1-item{
+    height:54px;
+    line-height:54px;
+    padding-left:10px;
+    color:#333;
+    background:#fff;
+}
+.brand1-item .cn{
+    font-size:18px;
+    font-weight:700;
+}
+.brand1-item .en{
+    font-size: 14px;
+    font-weight: 700;
+   /* margin-left:7px;*/
+}
+.brand1-item .brand1-i{
+    display:inline-block;
+    margin-right:14px;
+    width: 42px;
+    height: 54px;
+    line-height:54px;
+    float:right;
+}
+.brand1-item .brand1-i i{
+    margin-left:26px;
+    color:#c2c2c2;
+    font-size:18px;
+}
+.brand1 .img1{
+    width:234px;
+    height:316px;
+}
+.brand1 .img2{
+    width:485px;
+    height:316px;
+}
+.brand1 .img3{
+    width:485px;
+    height:316px;
+}
+.brand1 img:hover{
+    opacity:0.7;
+}
+.brand1 .text2{
+    width:485px;
+    float:left;
+   margin-right:13px;
+}
+.brand1-item .brand1-i2{
+    margin-right:14px;
+    line-height:54px;
+    float:right;
+    font-size:16px;
+    color:#666;
+}
+.brand1-item .brand1-i2 i{
+    margin-left:26px;
+    color:#c2c2c2;
+    font-size:18px;
+    margin-left:5px;
+}
+.brand1 .text3{
+    width:485px;
+    float:left;
+}
+/*品牌闪购结束*/
+/*行级元素不能设置宽高但是定位或者浮动后可以设置宽高*/
+/*浮动和定位 的元素宽是内容撑的*/
+/* linear 表示元素 transition 过渡属性 在元素定义里写 然后在触发  all 表示触发时所有元素都过渡
+在 hover 里触发*/
+/*品牌列表开始*/
+.brand-list{
+    padding-top:10px;
+}
+.brand-item{
+    overflow:hidden;
+}
+.brand-item-small{
+    float:left;
+    background:#ffffff;
+    border-right:1px solid #eeeeee;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+.brand-list-link{
+    display:block;
+    width:122px;
+    height:108px;
+    padding-top:29px;
+    box-sizing:border-box;
+}
+.brand-shadow{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width:122px;
+    height:108px;
+    background:rgba(0,0,0,0.8);
+    display:none;
+}
+/*.brand-shadow .in-shandow{
+    position: absolute;
+    top:31px;
+    left:30px;
+}*//*不能用定位的方法 因为后来模块的字数不同 小标题就不会居中了*//*!important*/
+.brand-list-link img{
+    width:100px;
+    height:50px;
+    margin:0 auto;/*只能是块级元素水平居中的用法 所以要把图片变成块级元素*//*!important;*/
+    display:block;
+}
+.brand-shadow p{
+    color:#ffffff;
+    text-align: center;
+    margin-bottom:10px;
+    margin-top:31px;
+
+}
+.brand-shadow span{
+    display:block;
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+    width: 63px;
+    height: 18px;
+    margin:0 auto;/*调节块级元素水平居中*/
+    border-radius: 9px;/*css3里面的语法四角变圆*/
+    background:#ff0036;
+}
+.brand-item-small:hover .brand-shadow{
+    display:block;
+}
+/*品牌列表结束*/
+/*天猫超市开始*/
+.mart-wrapper{
+    padding-top:20px;
+}
+.mart-head{
+    /*overflow: hidden;*/
+    height:31px;
+    line-height:31px;
+    margin-bottom: 5px;
+}
+.mart-body{
+    overflow:hidden;
+}
+.mart-head ul{
+    float:right;
+}
+/*调节右边ul的位置两种方式：一种左右两边都浮动 或者给整个div设置一个单行文本垂直居中*/
+
+.mart{
+    width:214px;
+    height:25px;
+   /* float:left;*/
+}
+.mart-left:hover img,.mart-right:hover img{
+    opacity: 0.7;
+}
+.mart-head ul li {
+    float: left;
+}
+.mart-head ul li a{
+    color:#000;
+    margin: 5px 10px;
+    font-size: 14px;
+    padding-bottom:1px;
+    border-bottom:1px solid #f5f5f5;
+}
+.mart-head li a:hover{
+    border-bottom: 1px solid #000;
+}
+.mart-left{
+    float:left;
+
+}
+.mart-right{
+    float:right;
+    width:995px;
+    height:618px;
+}
+.mart-item{
+    background:#fff;
+    margin-left:13px;
+    margin-bottom: 11px;/*此处外边据设计和原图尺寸不一样因为要解决宽度不够掉下去问题*/
+    float: left;
+}
+.mart-left a img{
+    width:235px;
+    height:618px;
+}
+.mart-item1{
+    padding:10px;
+    width:464px;
+    height:281px;
+    background:#fff;
+    position:relative;
+}
+.mart-item1 .mart-shadow{
+    box-shadow:0px 2px 8px 0px rgba(0,0,0,.09);
+    overflow: hidden;
+}
+.mart-shadow .btn{
+    overflow:hidden;
+}
+.btn span{
+    float:left;
+    width:50%;
+    height:57px;
+    line-height:57px;
+    font-size:18px;
+    background:#f1f1f1;
+    text-align:center;
+}
+.btn .btn-active{
+    background:#00b262;
+    color:#fff;
+}
+.mart-content{
+    height:225px;/*虽然给这个父元素overflowhidden但是子元素里上面的按钮仍然塌陷*/
+}
+.mart-content .active{
+    display: none;
+}
+.mart-content-img .store{
+    height: 200px;
+    width: 200px;
+    float:right;
+    margin-top:10px;
+    margin-right:30px;
+}
+.mart-content-img .jiantou-content{
+    height: 97px;
+    width: 291px;
+    background:rgba(0,0,0,0);
+    position: absolute;
+    top:153px;
+    left:10px;
+}
+.jiantou-content .jiantou{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.jiantou-content .content-up{
+    position:absolute;
+    top:8px;
+    left:26px;
+    z-index: 1;
+}
+.jiantou-content .content-down{
+    position:absolute;
+    top:41px;
+    left:26px;
+    z-index: 1;
+    font-size:20px;
+    letter-spacing: 1px;
+}
+.jiantou-content .content-up span{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing: 1px;
+    color: #00B262;
+    margin-left:10px;
+}
+.jiantou-content .content-up  img{
+    font-size:20px;
+    border-top:6px solid transparent;
+    float: left;
+
+}
+.mart-item2{
+    width:234px;
+    height: 302px;
+    text-align: center;
+    border:1px solid transparent;
+}
+.item5{
+    margin-left: 12px;
+}
+.mart-item2 a{
+    display: block;
+}
+.mart-item2:hover{
+    border-color: #ff0036;
+}
+.mart-item2 img{
+    width: 185px;
+    height:185px;
+    margin-top: 20px;
+    text-align: center;
+}
+.mart-item2-title{
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+}
+.mart-item2-price{
+    font-size: 18px;
+    color: #FF0036;
+    /*line-height: 18px;*/
+}
+
+
+
+
+
