@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        body{
+            margin:0px;
+        }
         #div1{
             width:300px;
             height:600px;
             background:red;
+            border:1px solid black;
+
         }
         #div2{
             width:200px;
@@ -58,5 +63,122 @@
     </div>
     <div id="div6">如果想要阴影偏移量都相同 四个边都设置成0 就是水平竖直偏移量设置成0px
     </div>
+    <!--<script>
+        alert('aa');
+    </script> 一种方式是在html里面写script标签 一种方式 是在js页面里写 alert弹出对话框-->
+    <script>
+       /*var text=window.prompt("这是个测试","");
+       var text1=text*1;
+       if(text1==0){
+          text1= parseInt(text);
+
+       }
+       if (isNaN(text1)){
+           alert('不是一个数字')
+       }else{
+           if(text<100&&text>=90){
+               alert('So so')
+           }else{
+               if(text<90&&text>=80){
+                   alert('JUst last dance')
+               }else{
+                   if(text<80&&text>=70){
+                       alert('bye bye')
+                   }else{
+                      if (text<70&&text>=0){
+                          alert('ok')
+                      }else{
+                          alert('usb')
+                      }
+                   }
+
+               }
+           }
+       }
+     /*  var condition=prompt('请输入数字');//输入的是带有引号的数字所以与swich中的数字比较不相同
+       var condition=4;
+       switch(condition) {
+           case(4): {
+                 alert('fgd');
+                 break;
+             }
+           case(3): {
+                 alert('gfdl')
+             }
+           case(2): {
+                 alert('gfdl')
+             }
+           case(1): {
+                 alert('gfdl')
+             }
+         }
+
+           /*if(condition==1){
+               alert('hahah')
+             }/*两个等号表示值相等，三个等号类型也要相等*/
+        /*if(condition===1){
+               alert('hdhlsfh')
+        }
+       */
+        /*内置对象*/
+         console.log(Math.ceil(1.89));
+         console.log(Math.pow(2,4));
+         console.log(Math.random());//产生随机数 包含0不包含 1
+         Math.ceil(Math.random()*100);
+         var date=new Date('July 12');
+         console.log(date.getMonth()+'月');
+         //console.log(date.getDate()+"日");
+         var date1=new Date();
+         date1.setDate(12);
+         console.log(date1.getDate());
+         var date3=new Date();
+         /*超过当前月份和天数*/
+         date3.setDate(33);
+         console.log(date3.getMonth()+1+'月');
+         console.log(date3.getDate());
+         var arr=new Array(3);
+         arr[0]=1;
+         arr[1]=2;
+         arr[2]=3;
+         console.log(arr);
+         console.log(arr.length);
+       //  Monthed();/*函数升量*/
+         /*var a;
+           function Monthed()
+       {
+           a=5;
+          console.log(a+'aaa')
+       }
+
+       console.log(a+'**');
+       */
+   var arr=new Array();
+     arr[0]='h';
+     arr[1]='a';
+     arr[2]='p';
+     arr[3]='bb';
+     console.log(arr.concat('i',1));
+   var arr1=new Array();
+       arr1[0]='*';
+       arr1[1]='&';
+       arr1[2]='*"';
+       arr1[3]='b*';
+   var arr2=new Array();
+       arr2[0]='*';
+       arr2[1]='&';
+       arr2[2]='*"';
+       arr2[3]='b*';
+       console.log(arr1.concat(arr,arr2));
+   var arr3=[1,2,'3','4'];
+   document.write(arr3.join("*"));
+   var arr4=['tom','jili','mouse'];
+   document.write(arr4);
+   document.write("<br />");
+   document.write(arr4.pop());
+   document.write("<br />");
+   document.write(arr4);
+
+
+    </script>
 </body>
 </html>
